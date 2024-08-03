@@ -2,6 +2,8 @@ body {
     margin: 0px;
 }
 
+@media {}
+
 @font-face {
     font-family: PPNeueMachina-InktrapRegular;
     src: url(/fonts/PPNeueMachina-InktrapRegular.otf);
@@ -9,8 +11,12 @@ body {
 
 #main {
     height: 100vh;
-    background-color: #20212C;
-    padding: 0px;
+    width: 100vw;
+    /* background-color: #20212C; */
+    /* padding: 0px; */
+    overflow-x: hidden;
+    margin: 0 0 0 0;
+
 }
 
 /* header */
@@ -122,6 +128,10 @@ body {
 }
 
 .text-animation {
+    margin: -100px 0 0 0;
+}
+
+.text-animation {
     font-size: 50px;
     color: #ffffff;
     font-family: 'PPNeueMachina-InktrapRegular';
@@ -193,7 +203,7 @@ body {
 }
 
 .yazicalix-about {
-    font-size: 12px;
+    font-size: 14px;
     width: 600px;
     margin: 0px 0px 0px 140px;
     text-align: justify;
@@ -216,11 +226,99 @@ body {
     height: 100%;
 }
 
+/* space */
+
+#space {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    background-color: #010317;
+
+}
+
+
+#space-1 {
+    background-image: linear-gradient(#6f5ea9, #010317);
+    width: 80%;
+    height: 05%;
+    border-radius: 30px;
+
+}
+
+#space-1:hover {
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+}
+
 /* page-number-2 */
 
 #main2 {
-    margin: 0px;
+    margin: 0 0 0 0;
     display: flex;
-    background-color: rgb(170, 85, 85);
+    flex-direction: column;
+    background-color: #010317;
+    width: 100vw;
     height: 1400px;
+
+
+
+}
+
+#h2 {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-items: center;
+    justify-content: left;
+    padding-left: 120px;
+
+
+}
+
+h2 {
+    font-size: 42px;
+    color: #ffffff;
+    font-family: 'PPNeueMachina-InktrapRegular';
+
+}
+
+
+#videosr {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 1905px;
+    height: 30%;
+    /* background-color: #6661e9; */
+
+}
+
+#srvideo {
+    height: 80%;
+    width: 90%;
+    gap: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    /* background-color: aqua; */
+    padding: 20px;
+}
+
+.videos {
+    width: 560px;
+    height: 315px;
+    /* background-color: rgb(22, 197, 139); */
+
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.80);
+}
+
+.videos img {
+    width: 560px;
+    height: 315px;
 }
